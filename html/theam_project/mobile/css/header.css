@@ -1,0 +1,119 @@
+/* header */
+div.header { 
+    padding:5% 0;
+    background-color:#2196e0;
+} 
+div.header div.header_inner {
+    width:93.75%;
+    margin:0 auto;
+    position: relative;
+}
+div.header div.header_inner h1 {   
+    position: absolute;
+    width: 12.667%;
+    left: 41%;
+    top: -15%;
+    
+}
+
+
+    
+div.header div.header_inner a.menu{ 
+    display: block; float:left; 
+    width: 7.5%;
+    
+}
+div.header div.header_inner a.login{
+    display: block;
+    float: right;
+    font-size: 1.4em;
+    color: #fff;
+    font-weight: bold;
+}
+    
+/* header 끝*/
+
+/* 슬라이드 메뉴 */
+div.menu_slide {
+    width:100%; height:100%;
+    background:rgba(0,0,0,0.5);
+    position: fixed;
+    right:0;
+    top:0;
+    
+}
+div.menu_slide > ul { 
+    width:70%;
+    background: #262829;
+    height:100%;
+}
+div.menu_slide > ul > li { 
+      border-bottom: solid 1px #202122;
+    
+}
+div.menu_slide > ul > li a { 
+    display: block; color:#fff;
+    font-size:1.5em;
+    padding:5% 0;
+}
+div.menu_slide > ul > li > a >span { 
+    display: inline-block; 
+    width:11.925%;
+    margin: 0 10%;
+    margin-left: 15%;
+}
+
+div.menu_slide > ul > li > ul > li {
+    padding:5% 0;
+      border-bottom: solid 1px #202122;
+    background: #202122;
+}
+div.menu_slide > ul > li > ul{
+    padding-left: 15%;
+    background: #202122;
+    display: none;
+}
+
+/*
+div.menu_slide > ul > li > ul > li:nth-child(1) {
+    margin-top:5%;
+}
+*/
+
+
+
+
+
+div.menu_slide ul li.menu_header{
+    padding:10% 0;
+    text-align: center;
+    background: url(../images/slide_bg.png);
+    position: relative;
+}
+div.menu_slide ul li a.logo {
+    width: 33.25%;
+    display: inline-block;    
+}
+div.menu_slide ul li a.close {
+    display: inline-block;
+    width:10.55%;
+    position: absolute;
+    right:3%;
+    top:5%;
+}
+
+
+div.menu_slide { display: none;}
+
+/* 슬라이드 메뉴 끝 */
+
+/*search*/
+div.search { text-align: center; border-bottom:solid 1px #ddd;}
+div.search input { height:40px; margin:10px 0 ; width:80%; border:none; color:#b6b6b6;}
+div.search a { 
+    width: 5.47%;
+    display:inline-block;
+    vertical-align: middle;
+    margin:0 2%;
+}
+/*search*/

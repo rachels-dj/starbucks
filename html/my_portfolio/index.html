@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+	<title> MY PORTFOLIO </title>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/earlyaccess/nanumgothic.css' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/prefixfree.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <!--------------------------bxslider plugin -------------------------->
+	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+	<!--------------------------------------------------------------------->
+    
+    
+    <!-----------------------scroll------------------------------->
+    <script>
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){            
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+            });
+        });
+    </script>
+
+</head>
+<body>
+	<div class="header">
+		<div class="main_nav_wrapper">
+            <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+			<div class="gnb">
+				<ul>
+					<li><a href="#target1" class="scroll" id="s1">ABOUT</a></li>
+					<li><a href="#target2" class="scroll" id="s2">SKILLS</a></li>
+					<li><a href="#target3" class="scroll" id="s3">WORK</a></li>
+					<li><a href="#target4" class="scroll" id="s4">LET'S TALK</a></li>
+				</ul>
+			</div>
+		</div>
+	</div><!--header-->   
+
+	<div id="main_video_loaded">
+
+		<div id="main_txt">
+            <div>DESIGN BETTER. FASTER. TOGETHER.</div>
+            <div>UI / Web designer &amp; Web Developer</div>
+        </div>
+
+        <div class="hero-container">
+            <div class="fadeShow">
+                <a href="#"><img class="active" src="images/slide1.png" alt="image1" /></a>
+                <a href="#"><img src="images/slide2.png" alt="image2" /></a>
+                <a href="#"><img src="images/slide3.png" alt="image3" /></a>
+	       </div>
+         </div><!--hero_container-->  
+            
+<!--
+            <ul id="buttonList">
+                <li class="on"><a href="#">배너1</a></li>
+                <li><a href="#">배너2</a></li>
+                <li><a href="#">배너3</a></li>
+		  </ul>
+-->
+	</div><!--main_vidio_loaded-->
+
+	<div class="contents" id="target1">
+		<div class="about_me_wrapper">
+			<h2>about me</h2>
+			<div class="right">
+				<img src="images/about_img2.png" alt="">
+			</div>
+			<div class="left">
+				<ul>
+					<li>Powerful design<br />prototyping tools</li>
+					<li></br>I'm UI / UX Web designer &amp; Web Developer.</br> My work is focused principally on UI and branding design.</li>
+					<li><img src="images/my_pic.png" alt="img"></li>
+				</ul>
+			</div>
+
+
+		</div><!-- about_me_wrapper-->
+		
+
+		<div id="target2"></div>
+		<div class="skills_wrapper">
+			<div class="skills" >
+                <div class="s-title">
+                    <h2>Devices</h2>
+                    <p>I work for</p>
+                </div>
+				<ul>
+					<li><img src="images/device_img01.png" alt=""></li>
+					<li><img src="images/device_img02.png" alt=""></li>
+					<li><img src="images/device_img03.png" alt=""></li>
+				</ul>
+			</div>
+			<div class="skills">
+                <div class="s-title">
+                    <h2>Softwares</h2>
+                    <p>I use</p>
+                </div>
+				<ul>
+					<li>Photoshop</li>
+					<li>illustrator</li>
+					<li>Premiere Pro</li>
+					<li>After Effects</li>
+				</ul>
+			</div>
+			<div class="skills line-f">
+                <div class="s-title">
+                    <h2>Skills</h2>
+                    <p>I have</p>
+                </div>
+				<ul>
+					<li>HTML5</li>
+					<li>CSS3</li>
+					<li>Javascript</li>
+				</ul>
+			</div>
+
+		</div><!-- skill_wrapper -->
+		
+		<div class="work" id="target3">
+			<div class="work_list_wrapper">
+				<h2>Work</h2>
+					<div class="work_box">
+						<p><a href="http://rachelsong.dothome.co.kr/benefit" target="_blank"><img src="images/benefit_img.jpg"></a></p>
+						<p>Web Design </br>& Web Develoment</p>
+						<p>COMPANY : benefit</p>
+						<p>TYPE : Web Site</p>
+						<p><a href="http://rachelsong.dothome.co.kr/" target="_blank">URL : imstella33.dothome.co.kr</a></p>
+						<p>ROLE : Photoshop, HTML5, CSS3, php, jquery</p>
+					</div><!--work_box-->
+
+					<div class="work_box">
+						<p><a href="http://rachelsong.dothome.co.kr/theam_project" target="_blank"><img src="images/webcafe.jpg"></a></p>
+						<p>Web Design </br>& Web Develoment</p>
+						<p>COMPANY : Web Cafe</p>
+						<p>TYPE : Web Site</p>
+						<p><a href="http://rachelsong.dothome.co.kr/theam_project" target="_blank">URL : http://imstella.dothome.co.kr/theam_project</a></p>
+						<p class="mobile_url"><a href="http://rachelsong.dothome.co.kr/theam_project/mobile/index.html" target="_blank">
+						MOBILE VERSION VIEW</a></p>
+						<p>ROLE : Photoshop, HTML5, CSS3, php, jquery</p>
+					</div><!--work_box-->
+
+					<div class="work_box">
+						<p><a href="http://www.gsretail.com/gsretail/ko/main" target="_blank"><img src="images/gs_retail.jpg"></a></p>
+						<p>Web Design</p>
+						<p>COMPANY : GS Retail</p>
+						<p>TYPE : Web Site</p>
+						<p><a href="http://www.gsretail.com/gsretail/ko/main" target="_blank">URL : gsretail.com</a></p>
+						<p>ROLE : Photoshop, illustrator</p>
+					</div><!--work_box-->
+
+					<div class="work_box">
+						<p><a href="http://rachelsong.dothome.co.kr/swatch/" target="_blank"><img src="images/swatch.jpg"></a></p>
+						<p>Web Develoment</p>
+						<p>COMPANY : Swatch</p>
+						<p>TYPE : Web Site</p>
+						<p><a href="http://rachelsong.dothome.co.kr/swatch/" target="_blank">URL : imstella.dothome.co.kr/swatch</a></p>
+						<p>ROLE : Photoshop, HTML5, CSS3, php, jquery</p>
+					</div><!--work_box-->
+
+					<div class="work_box">
+						<p><a href="http://rachelsong.dothome.co.kr/travel/" target="_blank"><img src="images/travel.jpg"></a></p>
+						<p>Web Develoment</p>
+						<p>COMPANY : LAGO DI GARDA HOTEL</p>
+						<p>TYPE : Responsive Web Site</p>
+						<p><a href="http://rachelsong.dothome.co.kr/travel/" target="_blank">URL : imstella.dothome.co.kr/travel</a></p>
+						<p>ROLE : Photoshop, HTML5, CSS3, php, jquery</p>
+					</div><!--work_box-->
+
+					<div class="work_box">
+						<p><a href="http://rachelsong.dothome.co.kr/dior_homme/" target="_blank"><img src="images/vogue.jpg"></a></p>
+						<p>Web Design </br>& Web Develoment</p>
+						<p>COMPANY : Vogue homme</p>
+						<p>TYPE : Web Site</p>
+						<p><a href="http://rachelsong.dothome.co.kr/dior_homme/" target="_blank">URL : imstella.dothome.co.kr/dior_homme</a></p>
+						<p>ROLE : Photoshop, illustrator</p>
+					</div><!--work_box-->
+
+					<div class="work_box">
+						<p><a href="http://www.popcard.co.kr/popcard/ko/main" target="_blank"><img src="images/popcard.jpg"></a></p>
+						<p>Web Design</p>
+						<p>COMPANY : GS Retail / POP Card</p>
+						<p>TYPE : Web Site</p>
+						<p><a href="http://www.popcard.co.kr/popcard/ko/main" target="_blank">URL : popcard.co.kr</a></p>
+						<p>ROLE : Photoshop, illustrator</p>
+					</div><!--work_box-->
+
+					<div class="work_box">
+						<p><a href="http://watsons.gsretail.com/watsons/ko/main?uiel=Desktop" target="_blank"><img src="images/watsons.jpg"></a></p>
+						<p>Web Design</p>
+						<p>COMPANY : GS Retail / Watsons</p>
+						<p>TYPE : Web Site</p>
+						<p><a href="http://watsons.gsretail.com/watsons/ko/main?uiel=Desktop" target="_blank">URL : watsons.gsretail.com/watsons</a></p>
+						<p>ROLE : Photoshop, illustrator</p>
+					</div><!--work_box-->
+
+					<div class="work_box">
+						<p><a href="http://premier.shinhan.com/premier/index.jsp" target="_blank"><img src="images/shinhan.jpg"></a></p>
+						<p>Web Design</p>
+						<p>COMPANY : Shinhan Bank / 신한 프리미어</p>
+						<p>TYPE : Web Site</p>
+						<p><a href="http://premier.shinhan.com/premier/index.jsp" target="_blank">URL : premier.shinhan.com/premier</a></p>
+						<p>ROLE : Photoshop, illustrator</p>
+					</div><!--work_box-->
+
+					<div class="work_box">
+						<p><a href="https://banking.nonghyup.com/nhbank.html#n" target="_blank"><img src="images/nhbank_img.jpg"></a></p>
+						<p>Web Design</p>
+						<p>COMPANY : NH Bank</p>
+						<p>TYPE : Web Site</p>
+						<p><a href="https://banking.nonghyup.com/nhbank.html#n" target="_blank">URL : banking.nonghyup.com</a></p>
+						<p>ROLE : Photoshop, illustrator</p>
+					</div><!--work_box-->
+
+					<div class="work_box">
+						<p><a href="https://www.futures.co.kr/" target="_blank"><img src="images/nh_krx.jpg"></a></p>
+						<p>Web Design</p>
+						<p>COMPANY : NH Bank / NH 선물</p>
+						<p>TYPE : Web Site</p>
+						<p><a href="https://www.futures.co.kr/" target="_blank">URL : futures.co.kr</a></p>
+						<p>ROLE : Photoshop, illustrator</p>
+					</div><!--work_box-->
+
+					<div class="work_box">
+						<p><img src="images/mou.jpg"></p>
+						<p>Web Design</p>
+						<p>COMPANY : 모우인터렉티브</p>
+						<p>TYPE : Responsive Web Site</p>
+						<p>URL : mouin.co.kr</p>
+						<p>ROLE : Photoshop, illustrator</p>
+					</div><!--work_box-->
+
+
+			</div><!--work_list_wrapper-->
+		</div><!--work-->
+        <div class="inside inside-bg">
+            <div class="contect_form">
+                <h2>Contact</h2>
+                <form method="post" id="contact_form2">
+                    <input type="hidden" name="xsrfFormToken" value="d222b6f78f64829b317aa2a1cc75036b" />
+                        <p><label for="contact_name"></label><input type="text" name="name" id="contact_name" value="Name..." autocomplete="off" spellcheck="false" /></p>
+                        <p><label for="contact_email" value="Email.."></label><input type="text" name="email" id="contact_email" value="Email..." autocomplete="off" spellcheck="false" /></p>
+                        <p><select name="purpose" id="contact_purpose">
+                            <option value="Regarding...">Regarding...</option>
+                            <option value="enterprise">Enterprise Sales</option>
+                            <option value="support">Customer Support & Billing</option>
+                            <option value="recruiting">Recruiting</option>
+                            <option value="info">Just saying hi!</option>
+                        </select></p>
+                        <p id="contact_question">
+                            <label for="contact_question"></label>
+                            <textarea name="question" id="contact_question" value="Message..."></textarea>
+                        </p>
+                    <p class="button"><input type="submit" value="Send It!" id="target4"></p>
+                </form>
+            </div><!-- contect-form ---->
+        </div><!--insude--->
+
+		<div class="lets_talk_wrapper">
+			<h2>Let's Talk!</h2>
+			<p>djsong33@gmail.com</p>
+			<a target="_blank" href="http://www.facebook.com"><img src="images/icon_facebook.png" alt=""></a>
+			<a target="_blank" href="http://www.instagram.com/"><img src="images/icon_instagram.png" alt="" ></a>
+			<a target="_blank" href="http://twitter.com/"><img src="images/icon_twitter.png"  alt="" ></a>
+		</div>
+
+	</div><!---contents-->
+
+	<div class="footer">
+        <a href=""><p><img src="images/logo_f.png" alt=""></p></a>
+		<p>DESIGN BETTER EXPERIENCES </br>FOR WEB & MOBILE</p>
+		<div class="copy">&copy; 2022 ♥︎ DJSONG &ensp;All Rights Reserved.</div>
+	</div><!--footer-->
+
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

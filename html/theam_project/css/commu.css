@@ -1,0 +1,198 @@
+@charset "utp-8";
+div.navi { 
+    height:70px; width:1200px;
+    margin:0 auto;
+    letter-spacing: -1px;
+}
+div.navi img { vertical-align: baseline;}
+div.navi span {    
+    display: inline;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 20px;
+    color:#999999;
+}
+div.navi span.last_navi {
+    color:#262932;
+}
+
+
+div.comunity {
+    background:#f4f4f4;
+    padding-bottom:100px;
+    
+}
+
+
+div.community_inner {
+    
+    width:1200px;
+    margin:0 auto;
+}
+
+div.comunity_header { padding:30px 0 ;}
+div.comunity_header h2 {
+    color:#2993d6;
+    line-height: 1.2;
+    font-size: 35px;    
+}
+
+div.comunity_header p {
+    color:#7f8080;
+    font-size:14px;
+    letter-spacing: -1px;
+    margin:10px 0 ;
+}
+
+div.comunity_header ul li {
+    float:left;
+    margin:0 5px;
+    cursor: pointer;
+}
+
+div.comunity_header ul li:nth-child(1){width:18px; height: 18px; background-color: #fff; border:1px solid #d0d0d0;
+margin-left:0;}
+div.comunity_header ul li:nth-child(2){width:18px; height: 18px; background-color: #3cb44a; border:1px solid #329940;}
+div.comunity_header ul li:nth-child(3){width:18px; height: 18px; background-color: #cea33a; border:1px solid #ac892f;}
+div.comunity_header ul li:nth-child(4){width:18px; height: 18px; background-color: #8936e0; border:1px solid #712cba;}
+div.comunity_header ul li:nth-child(5){width:18px; height: 18px; background-color: #8936e0; border:1px solid #1e2b6f;}
+div.comunity_header ul li:nth-child(6){width:18px; height: 18px; background-color: #253d97; border:1px solid #1e2b6f;}
+div.ccomunity_header ul li:nth-child(7){width:18px; height: 18px; background-color: #ff7300; border:1px solid #e26803;}
+
+
+p.border_s {
+    text-align: right;
+    padding:10px 0;
+}
+p.border_s input {
+    width:200px;
+    height:30px;
+    border:none;
+}
+p.border_s a{
+    color:#000;
+}
+
+table {
+    border-top:#17669f solid 1px;
+    border-spacing: inherit;
+}
+
+table > thead > tr > th {
+    height:35px;
+    background: #ededed;
+    border-bottom: solid 1px #d0d0d0;    
+}
+
+table > tbody > tr > td {
+    text-align: center;
+    height:45px;
+     border-bottom: solid 1px #d0d0d0;
+    font-size: 14px;    
+}
+div.paging { 
+    text-align: center; 
+    padding-top:70px;
+    padding-bottom:20px;
+}
+
+div.paging ul { display: inline-block;}
+div.paging ul li { 
+    float:left; width:25px; height:25px;
+    box-sizing: border-box;
+    border:solid 1px #c3c3c3;
+    margin:0 5px;
+    text-align: center;
+        background: #fff;
+}
+
+div.paging ul li:hover {
+        background:#4382b0;
+    border:solid 1px #17669f;
+    color:#fff;
+}
+div.paging ul li:nth-child(1){
+    background:#4382b0;
+    border:solid 1px #17669f;
+    
+}
+div.paging ul li:nth-child(1) a {
+    color:#fff;
+}
+div.paging ul li a {
+    display: block;
+    color:#626262;
+}
+
+
+
+
+
+
+
+
+
+
+/* 웹접근성 우수*/
+p.asdf { font-size:18px; color:#2993d6; letter-spacing: -1px;}
+div.company1 { margin-top:20px;}
+div.company1 > p { 
+    height:50px; line-height: 50px; cursor: pointer;
+    background:#f4f4f4;
+    border-top:#cdcdcd solid 1px;
+    
+}
+div.company1 > p > span { 
+    display: inline-block; font-size:14px;
+}
+div.company1 > p > span.company_month {
+    color:#2993d6;
+    font-weight: bold;
+    width:100px;
+    text-align: center;
+}
+div.company1 > p > span.company_title {
+    font-weight: bold;
+    color:#484848;
+    width:780px;
+}
+div.company1 > p > span.company_name {
+    width:150px;
+    color:#2993d6;
+    font-weight: bold;
+}
+div.company1 > p > span.company_name > span {
+    color:#484848;
+    margin:0 10px;
+}
+div.company1 > p > span.company_day {
+    width:150px;
+    color:#2993d6;
+    font-weight: bold;
+}
+div.company1 > p > span.company_day > span {
+    color:#484848;
+    margin:0 10px;
+}
+div.company1 > div.company_in {
+    border-top: solid 1px #dcdcdc;    
+    padding-top:20px;
+}
+div.company1 > div.company_in > span  {
+    display:block;
+    width:90%;
+    margin:0 auto;
+}
+div.company1 > div.company_in > h3 {
+    width:90%;
+    margin:0 auto;
+    padding:30px 0;
+}
+div.company1 > div.company_in > p {
+    width:90%;
+    margin:0 auto;
+    padding-bottom:50px;
+}
+
+
+/* 웹접근성 우수 끝*/

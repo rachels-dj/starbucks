@@ -1,0 +1,21 @@
+@charset 'utp-8';
+/*footer */
+div.footer {
+    background:#111212;
+    padding:3% 0;
+}
+div.footer div.footer_inner p {
+    width:93.75%;
+    margin:0 auto;
+    text-align: center;
+    color:#4e4e4e;
+    font-size:0.9em;
+    letter-spacing: -1px;
+}
+div.footer div.footer_inner span {
+    display: block;
+    margin-top:2%;
+    color:#646464;
+    font-style:italic;
+}
+/*footer */

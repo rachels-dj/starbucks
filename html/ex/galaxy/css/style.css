@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+*{ margin:0; padding:0; }
+li{ list-style:none; }
+a{ text-decoration:none; }
+
+
+div.logo {
+	width:1000px; 
+	margin:0 auto; 
+	height:60px; 
+	line-height:60px;
+	font-size:20px; 
+	padding:0 10px;
+}
+
+div.main {
+	border-top:1px solid #ddd;
+	height:450px;
+	text-align:center;
+	position:relative;
+	background:-webkit-linear-gradient(top, #fff 70% , #d6d6d6 100%);
+	overflow:hidden;
+}
+
+h2 {
+	font-weight:normal; 
+	margin:40px 0 10px; 
+	position:relative; 
+}
+
+p { 
+	font-size:12px; 
+	position:relative; 
+}
+
+img.device {
+	position:absolute; 
+	bottom:0;
+	left:50%;
+	margin-left:-300px;
+}
+
+/* 타임컨트롤 애니메이션 적용하기 */
+@keyframes device {
+	0% { opacity:0; bottom:-100px; }
+	100% { opacity:1; bottom:0; }
+}
+img.device {
+	animation: device 2s linear;
+}
+
+@keyframes htag {
+	0% { top:-40px; opacity:0; }
+	100% { top:0; opacity:1; }
+}
+h2 { 
+	opacity:0;
+	animation: htag 1s linear 3s; 
+	animation-fill-mode:forwards;
+}
+
+@keyframes ptag {
+	0% { opacity:0; left:-40px; }
+	100% { opacity:1; left:0; }
+}
+p { 
+	opacity:0;
+	animation: ptag 2s linear 4s;
+	animation-fill-mode:forwards;
+}

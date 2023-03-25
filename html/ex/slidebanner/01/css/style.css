@@ -1,0 +1,35 @@
+/*  Reset CSS  */
+* { margin:0;  padding:0;}
+ol,ul { list-style:none; }
+a { outline:0; text-decoration:none; color:#555; }
+img { border:0; }
+
+body {
+	margin:20px auto;
+	padding:0;	
+	width:620px;
+	background:#192839;
+}
+
+.thumbs {
+   width:100px;	
+   float:left; 
+}
+
+.thumbs img {
+	border:solid 1px #ccc;
+	padding:5px;
+	margin-bottom:3px;
+}
+
+.thumbs img:hover {
+	border-color:#EF4018;
+}
+
+#largeImg {
+	border:solid 1px #ccc;
+	width:500px;
+	height:280px;
+	padding:5px;
+    margin-left:110px;
+}

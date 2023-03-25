@@ -1,0 +1,116 @@
+++++++++++++ MVC
+		M :   MODEL		데이터설계  => DB 
+		V :    VIEW			사용자와 상호작용  => 회원가입폼
+		C :    CONTROLLER	처리
+		
+	####1   회원가입
+		# M : db명 web7   / table명:webinfo
+		# V :   join.php[회원가입폼]				my.php[회원의 정보출력  * ]
+		# C :			   join_process.php[회원가입처리]
+
+	####2  로그인
+		# M : db명 web7   / table명:webinfo
+		# V :   login.php[회원가입폼]	 ↓			index.php[메인페이지 ]
+		# C :			login_process.php[회원가입처리]
+
+	####3  BOARD 
+	    [1] 글쓰기
+		# M : db명 web7   / table명:multiboard
+		#  V :   bwrite.php[글쓰기 폼] 	 ↓         board.php [게시판목록]    
+		#  C :			      insert.php [  글쓰기 처리]   ↑
+
+	    [2] 상세보기
+		# M : db명 web7   / table명:multiboard
+		#  V :  board.php [게시판목록]  : 제목에 링크  →  bdetail.php[상세페이지]   
+				* 최신글순으로출력	order by			* 조회수올리기  mysql(update)
+				* 글전체갯수순으로 3,2,1				* 내용부분에 줄바꿈 맞추기  nl2br
+		                 
+	    [3] 수정
+		# M : db명 web7   / table명:multiboard
+		#  V :  board.php [게시판목록] →  bdetail.php[상세페이지]			→     bedit.php[상세수정페이지]  : 비밀번호입력받기
+							   : 수정버튼에 몇번글을 수정할것인지 링크			↓
+		#  C :								↑        ←			 bupdate.php [  수정 처리]   
+														      : 사용자가 입력한 비밀번호와
+														      해당하는 글번호의 비밀번호와 일치하다면 수정처리
+
+	    [4] 삭제
+		# M : db명 web7   / table명:multiboard
+		#  V :  board.php [게시판목록] →  bdetail.php[상세페이지]			
+							   : 삭제버튼에 몇번글을 삭제할것 비밀번호입력창나오게 만들기
+								↓
+		#  C :					   bdelete.php [  삭제 처리 ]   
+							   : 비밀번호가 맞다면 ajax로 삭제하게 만들기  
+
+	    [5] 쿠키/세션 => 오늘하루동안 이창열지 않기
+		가.    http://qr.naver.com/	
+		나.    팝업창 만들기
+		다.    오늘하루동안이창열지않음.
+
+		세션 : 
+
+	    [6] 파일올리기
+		# M :  db명 web7   / table명:multiboard
+		#  V :   bwrite.php[글쓰기 폼] : 파일올리기  input type="file" ★	 ↓         board.php [게시판목록]    
+		#  C :								insert.php [  글쓰기 처리]   ↑  : 파일올리기 처리 ★ 
+
+
+		# M :  db명 web7   / table명:multiboard
+		#  V :  board.php [게시판목록]    →  bdetail.php[상세페이지]:  올린파일 보기 ★ 
+									→  bedit.php[상세수정페이지]  :  파일올리기  input type="file" ★	
+							 				↓
+		#  C :	              ↑        ←			      bupdate.php [  수정 처리]   : 파일올리기 처리 ★     
+
+
+	    [7] 파일분리
+		- include  : 
+		- require : 
+		- include_once / require_once :
+
+
+
+
+	    [8] 호스팅업체에 올리기
+
+
+	    [9] 객체 mysqli
+
+
+
+		가.  M : MODEL   db명 web7   / table명:multiboard
+			번호		 bno		int               not null   auto_increment   PRIMARY KEY
+			제목	         btitle		varchar(100)   not null 
+			내용           bcontent     text		  not null
+			글쓴이        bname        varchar(50)    not null 
+			비밀번호     bpass         varchar(50)   not null 
+			이메일        bemail        varchar(100)  not null 
+			작성일        bdate        datetime        not null 
+			조회           bview          int              not null
+			파일올리기  bfilename     varchar(100)   not null
+			ip              bip             varchar(20)   not null
+			
+			http://127.0.0.1/myadmin/   root/1234
+			db선택 : web7
+			새로운테이블만들기 : multiboard   10
+
+			CREATE TABLE  `web7`.`multiboard` (
+				`bno` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+				`btitle` VARCHAR( 100 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+				`bcontent` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+				`bname` VARCHAR( 50 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+				`bpass` VARCHAR( 50 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+				`bemail` VARCHAR( 100 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+				`bdate` DATETIME NOT NULL ,
+				`bview` INT NOT NULL ,
+				`bfilename` VARCHAR( 100 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+				`bip` VARCHAR( 20 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
+			) ENGINE = MYISAM CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+
+		나.  글쓰기 폼 form [ bwrite.php ] /  게시판목록  [ board.php ]  
+
+
+
+
+
+	댓글
+	mysqli + 객체

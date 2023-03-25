@@ -1,0 +1,87 @@
+@charset 'utp-8';
+
+/* 네비게이션 */
+div.navi {
+    
+    border-bottom:#dcdcdc solid 1px;
+}
+div.navi_inner {
+    width:93.75%; margin:0 auto;
+    padding:4% 0 ;
+
+}
+div.navi_inner p { display: inline-block; width:50%;}
+div.navi_inner p { font-size:1em;}
+div.navi_inner p span.mark{
+    width: 7.67%;
+    display: inline-block;
+    
+}
+div.navi_inner p span.right_point{
+    display: inline-block;
+    width: 4.005%;
+
+}
+div.navi_inner p span { vertical-align: middle; display: inline-block;}
+
+div.navi_inner p span > a { color:#bbb; font-size:1.3em;}
+div.navi_inner ul { 
+    display: inline-block; width:50%;
+    text-align: right;
+}
+
+div.navi_inner ul li {
+display: inline-block;
+    width: 17.365%;    
+}
+
+/* 네비게이션 끝 */
+div.notice > ul > li { margin:5% 0;}
+div.notice > ul > li > div{
+    width: 85%;
+    margin: 0 auto;
+    border: solid 1px #ddd;
+    padding: 5%;
+
+}
+
+div.notice > ul > li > div > h3 {
+    color:#249ee3;
+    font-size:1.5em;
+    padding:5% 0;
+}
+div.notice > ul > li > div > hr {
+    border:none;
+    height:3px;
+    background:#249ee3;
+    width:10%;
+}
+
+div.notice > ul > li > div > p {
+    font-size:1.4em;
+    padding:5% 0;
+    letter-spacing: -2px;
+    color:#1f1f22;
+}
+
+div.notice > ul > li > div > div > p.l{
+    float:left;
+}
+div.notice > ul > li > div > div > p.l > span:nth-child(1){
+    color:#2ca0ea;
+}
+div.notice > ul > li > div > div > p.l > span:nth-child(2){
+    color:#1f1f22;
+}
+
+div.notice > ul > li > div > div > p.r {
+    float:right;
+}
+div.notice > ul > li > div > div > p.r > span:nth-child(1){
+    display: block;
+    width: 82.3%;
+    margin: 0 auto;
+}
+div.notice > ul > li > div > div > p.r > span:nth-child(2){
+    color:#a8a8a9;
+}

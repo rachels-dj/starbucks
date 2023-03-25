@@ -1,0 +1,75 @@
+@charset 'utp-8';
+
+
+p.login_logo {
+    width: 55.625%;
+    margin: 0 auto;
+    padding: 5% 0;
+}
+
+ul.login_box {
+    width:90%;
+    margin:5% auto;
+    border-top:solid 1px #cccccc;
+    border-bottom:solid 1px #cccccc;
+    
+}
+
+ul.login_box li input {
+    width:100%;
+    border:none;
+    margin:2% 0;
+    padding:3% 0;
+    text-align: center;
+    font-size:1.5em;
+    color:#dadada;
+}
+ul.login_box li:nth-child(1){
+    border-bottom:solid 1px #cccccc;
+}
+
+p.find_box {
+    width:90%; margin:0 auto;
+    color:#cccccc;
+    font-size:1.3em;
+    margin-bottom: 5%;
+}
+p.find_box a {
+    display: inline-block;
+    width:47%; 
+    text-align: center;
+    color:#3d3d3d;
+    letter-spacing: -2px;
+}
+
+a.send {
+    display: block;
+    width:90%;
+    margin:0 auto;
+    color:#fff;
+    font-size:1.5em;
+    background:#2196e0;
+    text-align: center;
+    border-radius: 10px;
+    padding:5% 0 ;
+    margin-bottom:5%;
+}
+
+p.social_title {
+    width:90%; margin:0 auto;
+    text-align:center;
+    color:#3d3d3d;
+    font-size:1.3em;
+    padding:5% 0 ;
+}
+
+div.social {
+    margin-bottom:5%;
+}
+
+div.social > a {
+    display: block;
+    float:left;
+    width:49%;
+    margin:0.5%;
+}

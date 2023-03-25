@@ -1,0 +1,13 @@
+/*  Reset CSS  */
+* { margin:0;  padding:0;}
+ol,ul { list-style:none; }
+a { outline:0; text-decoration:none; color:#555; }
+img { border: none 0; vertical-align: top; }
+
+#banner_wrap { 
+	position: relative; 
+	width: 470px; 
+	margin: 100px auto;  
+}
+#prevBtn { position: absolute; left: 0px; top:10px; }
+#nextBtn { position: absolute; right: 5px; top:10px; }
