@@ -1,0 +1,728 @@
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@500;600;700&family=Raleway:wght@100;200;300;500;700&display=swap');
+
+
+
+
+html{scroll-behavior:smooth;}
+
+
+body{
+  width: 100%;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #d4e9e2;
+}
+
+header{
+  width: 100%;
+  height: 123px;
+  background-color: #fff;
+  position: relative;
+  z-index: 99;
+}
+
+nav{
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  line-height: 90px;
+}
+
+
+nav h1 img{
+  flex: 2;
+  height: 70px;
+  width: 70px;
+  margin-top: 10px;
+}
+
+
+
+
+/* Main Menu */
+
+.util_nav{
+  width: 1200px;
+  position: absolute;
+  bottom: 20px;    
+}
+
+.sub_all_first{
+  float: right;
+  margin: 0 20px 36px 0;
+}
+
+.sub_all_first li {
+  font-size: 14px;
+  color: #333333;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.sub_all_first li a:hover{
+  text-decoration: underline;
+}
+
+
+
+
+.gnb{
+  width: 1200px;
+  height: 50px;
+  flex: 6;
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  margin-top: 20px;
+}
+.gnb>.main{
+  width: 150px;
+}
+.gnb>.main>a{
+  display: block;
+  position: relative;
+  width: inherit;
+  height: 80px;
+  line-height: 80px;
+  color: #000;
+  font-size: 15px;
+	font-weight: 500;
+}
+
+
+
+.gnb>.main:hover>a{color: #00754a;}
+.gnb>.main:hover>a:after{color: #232323;}
+
+
+
+
+/* Sub Menu*/
+.sub_all{
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top:100%;
+  background: #fff;
+  width: 150px;
+  height: 220px;
+
+}
+/* .last{border-right: 1px solid #e8e8e8;} */
+
+
+.sub_all li{
+  width: inherit;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.sub_all li:first-child{
+  font-weight: bold;
+  color: #000;
+}
+.sub_all li:last-child{border-bottom: none;}
+.sub_all li a {
+	font-size: 14px;
+}
+.sub_all li:hover {background: #dbe4ea;}
+.sub_all li:hover:not(:first-child){background: #dbe4ea;}
+
+
+.gnb>.main:hover{
+  border-bottom: 1px solid #00754a; 
+  margin-bottom: -10px;
+}
+
+/* 100%서브배경박스 */
+.sub_bgbox{
+  display: none;
+  position: absolute;
+  top:100%;
+  left: 0;
+  width: 100%;
+  height:220px;
+  background: #fff;
+}
+
+
+
+
+/* Body___________________ */
+
+main{
+  width: 100%;
+  position: relative;
+  background-color: #1e3932;
+  top:0;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+
+
+
+/* Main Visual */
+/* .main-visual-wrap{
+  width: 1200px;
+  height: 690px;
+  margin:auto;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  margin-top: 100px;
+}
+
+.main-visual-set-01{
+  position: absolute;
+  overflow: hidden;
+  margin-top: 170px;
+  margin: auto;
+  background-size: cover;
+
+}
+
+
+.main-visual-slogan{
+  color: #fff;
+  font-size: 30px;
+  float: right;
+  text-align: center;
+}
+
+.main-visual-slogan strong{
+  color: #fff;
+  font-size: 80px;
+  line-height: 100px;
+}
+
+
+.main_img01{
+  float: left;
+  left:0;
+  margin-top: 200px;
+
+
+}
+.main_img02{
+  float: left;
+  margin-left:-280px;
+
+} */
+
+
+.fadeShow{
+  width: 1200px;
+  position:fixed; 
+  position:relative;
+  margin:auto;
+}
+
+.changeimg{
+  height: 685px;
+  text-align: center;
+}
+
+/* (1)이미지 모두 동일한 위치, 안보이게 함 */
+.changeimg ul li{
+  display: none;
+  position:absolute;
+  top:0;
+  left:0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* (2)첫번째 이미지만 보임 */
+.changeimg ul li:first-child{
+  display: block;
+}
+
+/* 하단버튼 */
+.fadeShow .btn{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.btn ul li{
+  float: left;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #000;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.btn ul li.active{background: #00754a;}
+
+/* 좌우버튼 */
+.side_btn .lbtn{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  left:30px;
+  width:65px;
+  height: 65px;
+  background: url(../images/slide_arrow_l.png) no-repeat;
+}
+.side_btn .lbtn:hover{
+  background: url(../images/mscard_arrow_l_on.png) no-repeat;}
+
+.side_btn .rbtn{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  right:30px;
+  width:65px;
+  height: 65px;
+  background: url(../images/slide_arrow_r.png) no-repeat;
+}
+.side_btn .rbtn:hover{background: url(../images/mscard_arrow_r_on.png) no-repeat;}
+
+
+
+
+
+
+
+
+/* section */
+.section{
+  width: 100%;
+  margin: auto;
+}
+
+
+/* yourPick menu */
+.products{
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex: 2;
+  align-items: center;
+  color: #fff;
+  margin: auto;
+  overflow: hidden;
+}
+
+.yourPick{
+  width: 600px;
+  height: 600px;
+  font-size: 30px; 
+  padding: 45px;
+  background-color: #104b39;
+  line-height: 50px;
+  position: relative;
+}
+
+.yourPick p{
+  font-size: 20px;
+  font-weight: 300;
+  margin: 10px 0 20px 0;
+}
+
+.l-yourPick-img{
+  width: 500px;
+  height:300px;
+}
+
+
+.l-yourPick-img ul{
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+}
+
+.l-yourPick-img img{
+  width: 345px;
+  height: 280px;
+  margin: 30px 40px 0 30px;
+}
+
+
+.yourPick-view img{
+  float: right;
+}
+
+.l-yourPick-img li a:hover{
+  color:#af9047;
+  transition: 0.5s;
+}
+
+
+/* signature menu */
+.signature{
+  width: 600px;
+  height: 600px;
+  background-color: #bed7cf;
+  font-size: 30px; 
+  color: #1e3932;
+  padding: 45px;
+}
+
+.signature p{
+  font-size: 20px;
+  margin: 10px 0 50px 0;
+}
+
+
+.r-signature-img img{
+  width: 326px;
+  height: 280px;
+  margin-top: 50px;
+
+}
+
+
+/* costa-products */
+.costa-products{
+  width: 100%;
+  height: 380px;
+  background-color: rgb(84, 78, 90);
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.costa-products img{
+  width: 400px; 
+}
+
+
+.costa-title{
+  height: 350px;
+  background:url("../images/store_exp_img03.png");
+
+}
+
+
+.costa-title img:nth-child(1){
+  position: absolute;
+  left: 180px;
+  top:50px;
+}
+.costa-title img:nth-child(2){
+  position: absolute;
+  width: 220px;
+  height: 210px;
+  right: 180px;
+  top:70px;
+}
+
+
+/* 자세히 보기 버튼01 */
+.detailBtn01{
+  width: 115px;
+  height: 34px;
+  line-height: 34px;
+  margin-top: 0;
+  position: absolute;
+  z-index: 0;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -55.4px;
+}
+
+.detailBtn01 a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+
+
+/* 엘살바도르 상품 */
+
+
+.elsa_bg{
+  width: 100%;
+  background:url("../images/store_exp_img04.png");
+  margin: auto;
+}
+
+
+.elsa-products{
+  width: 100%;
+  height: 450px;
+  background-color: rgb(177, 147, 82);
+  color: #633510;
+  position: relative;
+  margin: auto;
+}
+
+.elsa-products img{
+  margin:50px 60px 5px 180px;
+  background:url("../images/store_exp_img04.png");
+}
+
+.elsa-txt01{
+  position: absolute;
+  font-size: 40px;
+  font-weight: bold;
+  top:90px;
+  right: 160px;
+}
+
+.elsa-txt02{
+  font-size: 20px;
+  font-weight: 300;
+  position: absolute;
+  top:160px;
+  right: 110px;
+  
+}
+
+
+/* 자세히 보기 버튼02*/
+.detailBtn02{
+  width: 115px;
+  height: 34px;
+  line-height: 34px;
+  margin-top: 0;
+  position: absolute;
+  z-index: 0;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -55.4px;
+}
+
+.detailBtn02 a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #633510;
+  text-align: center;
+  line-height: 30px;
+  border: 2px solid #633510;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+
+
+/* Star for all */
+
+.starAll{
+  background-color: #fff;
+  margin: auto;
+  position: relative;
+}
+
+.star_bg{
+  position: absolute;
+  width: 100%;
+  height: 187px;
+  background-color:#1e3932 ;
+  line-height: 187px;
+  top:90px;
+}
+
+.star_imgs{
+  width: 1200px;
+  margin: auto;
+}
+
+.starImg01{
+  float: left;
+  margin-top: -60px;
+  
+}
+
+.starImg02{
+  float: right;
+  margin-top: 80px;
+}
+
+
+.starFor-txt{
+  position: absolute;
+  font-size: 60px;
+  color: #d2a04a;
+  text-align: center;
+  font-weight: bold;
+  top:-20px;
+  left: 40%;
+}
+
+.starFor-txt p{
+  position: absolute;
+  font-size: 28px;
+  font-weight: 400;
+  top:30%;
+  left: 20%;
+}
+
+
+.magazine{
+  width: 1200px;
+  height: 1250px;
+  margin: auto;
+}
+
+.magazine>h1>img{
+  margin-left: 35%;
+  margin-top: 367px;  
+}
+
+.magazine-con{
+  position: relative;
+  height: 470px;
+  margin:80px 0 65px 0;
+}
+
+.magazine-con01{
+  position: absolute;
+  left: 138px;
+}
+
+.magazine-con02{
+  position: absolute;
+  top:80px;
+  left: 470px;
+}
+
+.magazine-con03{
+  position: absolute;
+  right: 138px;
+}
+
+/* 자세히 보기 버튼03*/
+.detailBtn03{
+  width: 115px;
+  height: 34px;
+  line-height: 34px;
+  margin-top: 0;
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  margin-left: -55.4px;
+  
+}
+
+.detailBtn03 a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #633510;
+  text-align: center;
+  line-height: 30px;
+  border: 2px solid #633510;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+/* Footer */
+
+#footer{
+  width: 100%;
+  height: 200px;
+  background-color: rgb(33, 31, 31);
+  margin-top: 50px;
+  padding:30px;
+  font-weight: 100;
+  color: #fff;
+  margin: auto;
+  text-align: center;
+}
+
+
+/* Sub all menu*/
+
+
+
+
+
+
+/* SNS */
+.text_right li a img{
+  margin-right: 10px;
+  display: inline-block;
+  min-width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
+}
+
+.text_right li{
+  display: inline;
+}
+
+.social_list{
+  margin-right: -260px;
+}
+
+
+/* .social_lis li a:hover{
+  border: 1px solid ;
+} */
+
+
+
+/* 개인정보 처리방침 */
+.bottom_menu{
+  width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(119, 119, 119);
+  margin-bottom: 50px;
+}
+
+
+.bottom_menu a{ 
+  padding-right: 10px;
+}
+
+
+.bottom_menu a{
+  border-right: 1px solid rgb(53, 53, 53);
+}
+
+.bottom_menu a:not(:last-child) {border-right: 1px solid rgb(53, 53, 53);
+}
+  
+
+
+.bottom_menu a:hover{
+  color: #fff;
+  transition: 0.8s;
+}
+
+.address{
+  font-size: 15px;
+}
+.address p.copy{
+  margin-top: -10px;
+}
+
+
+
+
+
+
+
