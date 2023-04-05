@@ -218,25 +218,29 @@ main{
 
 
 .fadeShow{
-  width: 1200px;
+  width: 1200%;
   position:fixed; 
   position:relative;
-  margin:auto;
 }
 
 .changeimg{
+  display: block;
   height: 685px;
-  text-align: center;
 }
+
+.changeimg img{
+  margin-left: -50%;
+}
+
 
 /* (1)이미지 모두 동일한 위치, 안보이게 함 */
 .changeimg ul li{
-  display: none;
-  position:absolute;
-  top:0;
-  left:0;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1200PX;
+  height: 685px;
+
 }
 
 /* (2)첫번째 이미지만 보임 */
